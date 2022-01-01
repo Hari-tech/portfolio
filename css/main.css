@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color:rgb(225, 233, 241);
 }
 
 #nav {
@@ -14,6 +15,7 @@ body {
 
 #nav ul {
     float: right;
+    margin-top: 7px;
 }
 
 .navlist {
@@ -27,6 +29,10 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navlist a:hover{
+    color:aqua;
 }
 
 #home img {
@@ -51,16 +57,35 @@ body {
 
 .content h1 {
     font-size: 64px;
+    color: aqua;
 }
 
 .content h2 {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 400;
 }
 
 .buttons button {
     margin-top: 20px;
-    background: linear-gradient(90deg, blue, red);
+    margin-right: 10px;
+    background: linear-gradient(90deg, rgb(5, 217, 245), rgb(84, 201, 166));
+}
+.buttons button:hover{
+    background: gray;
+}
+
+#about h1 {
+    color: aqua;
+}
+
+.paragraph{
+    font-weight: 10px;
+    font-size: 24px;
+    color: grey;
+}
+
+#skill h1 {
+    color: aqua;
 }
 
 .skill .progress_bar {
@@ -68,25 +93,67 @@ body {
     background-color: gray;
     height: 20px;
     border-radius: 10px;
+    margin-bottom: 10px;
+    
 }
 
 .skill .progress_bar .filled_bar {
     height: 20px;
     border-radius: 10px;
-    background-color: blue;
+    background-color: rgb(107, 186, 189);
+}
+
+.skill p{
+    color: black;
+    margin-bottom: 0;
+}
+
+#service h1 {
+    color: aqua;
+}
+
+.service_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.service_title {
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.service_desc p {
+    color: #ffffff;
+}
+
+#project h1 {
+    color: aqua;
 }
 
 .project_card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: green;
+    background-color: gray;
     box-shadow: 0px 0px 5px gray;
 }
 
 .project_title {
     text-align: center;
     font-size: 32px;
+    color: #ffffff;
+}
+
+.project_desc p {
+    color: #ffffff;
+}
+
+#contact h1 {
+    color: aqua;
 }
 
 footer {
